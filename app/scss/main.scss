@@ -1,0 +1,21 @@
+// Base import
+
+@import "normalize";
+
+// Arguments
+
+@import "variables";
+@import "mixins";
+@import "common";
+@import "fonts";
+
+// Styles import
+
+@import "layout/header";
+@import "layout/banner";
+@import "layout/content";
+
+//Media queries
+
+@import "layout/breakpoints/1366";
+@import "layout/breakpoints/1200";

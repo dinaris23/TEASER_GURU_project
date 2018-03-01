@@ -1,0 +1,40 @@
+html {
+    font-size: 10px;
+}
+body {
+    height: 100vh;
+    background: url('../img/img-text-guru.jpg') no-repeat ;
+    background-position: 0% 100%;
+    font-family: $font-text;
+    color: #6d6963;
+}
+.container {
+    max-width: 1430px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+.col {
+    width: 50%;
+    position: relative;
+}
+.logo {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+
+//==========keyframes=========//
+
+@keyframes animation-line {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+

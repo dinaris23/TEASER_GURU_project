@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+    &_menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_item {
+        list-style: none;
+        margin-right: 25px;
+        &:last-child {
+            margin-right: 0;
+        }
+
+    }
+    &_link {
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        color: $color-black;
+        font-family: $font-bold;
+        @include fontSize(18);
+        position: relative;
+        line-height: 1;
+        cursor: pointer;
+            &:before {
+                display: block;
+                content: "";
+                height: 50%;
+                right: 0;
+                width: 0%;
+                background-color: $color-blue;
+                transition: width .3s ease-in-out;
+                position: absolute;
+                bottom: 3px;
+                z-index: -1;
+
+            }
+            &:hover::before, :focus::before {
+                left: 0;
+                right: auto;
+                width: 100%;
+            }
+    }
+}
