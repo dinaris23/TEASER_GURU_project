@@ -13,7 +13,7 @@ TweenMax.staggerFrom (cont, 1,
 0.5);
 
 //=====parallax=====//
-var scene = document.getElementById('scene');
-var parallaxInstance = new Parallax(scene);
+//var scene = document.getElementById('scene');
+//var parallaxInstance = new Parallax(scene);
 
     
