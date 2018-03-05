@@ -1,7 +1,8 @@
 .banner {
     display: flex;
     flex-direction: row;
-    margin-top: 15vh;
+    margin-top: 5%;
+    position: relative;
     &_title {
         @include fontSize(60);
         color: $color-black;
@@ -30,7 +31,7 @@
         position: relative;
        &:before {
             content: '';
-            display: block;
+            display: inline-block;
             height: 25%;
             background: $color-blue;
             position: absolute;

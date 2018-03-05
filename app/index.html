@@ -9,9 +9,40 @@
     </head>
     <body>
         <div class="container">
-            <header class="header">
-                <div class="header_logo">
-    <svg width="210" height="35">
+            <div class="container_mobile container_top">
+                <section class="mobile-menu">
+                    
+    <div class="burger-menu" id="burger">
+            <div class="burger-top"></div>
+            <div class="burger-middle"></div>
+            <div class="burger-bottom"></div>
+        </div>
+    <nav class="mobile-nav">
+        <li class="mobile-nav-header">
+            <div class="mobile-logo">
+                <!--<?xml version="1.0" encoding="utf-8"?>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                         viewBox="0 0 35 35" xml:space="preserve">
+                <g>
+                    <path class="st0" style="fill:#7AB9FF;" d="M136.1,17.4c0,1.9-1.5,3.4-3.3,3.4c-1.9,0-3.4-1.5-3.4-3.3c0-1.9,1.5-3.4,3.3-3.4c0.9,0,3.4,0,3.4,0
+                            S136.1,16.5,136.1,17.4z"/>
+                    <path class="st1" style="fill:#2F3438;" d="M132.7,11.4L132.7,11.4h6c0.4,0,0.8-0.1,1.2-0.2c1.1-0.5,1.8-1.5,1.8-2.7V5.5h-8.9l0,0
+                            c-7.4,0-13.2,6.7-11.7,14.3c0.2,0.7,0.8,3.6,3.1,5.9c2.5,2.5,5.3,3.2,6,3.4c5.6,1.2,10.8-1.7,13.1-6.2c0.2-0.5,0.6-1.7,0.8-2.9
+                            c0.2-1,0.2-1.9,0.2-2.2l0,0c0-1.9-1.6-3.5-3.5-3.5h-2.1v3.1c0,3.3-2.7,6-6,6c-3.3,0-6.1-2.6-6.1-6
+                            C126.6,14.2,129.3,11.4,132.7,11.4z"/>
+                </g>
+                </svg>-->
+                <h3 class="mobile-menu-title">Меню</h3>            
+            </div>
+        </li>
+        <li class="mobile-nav-header"><a>Главная</a></li>
+        <li class="mobile-nav-header divider"><a>Рекламодатель</a></li>
+        <li class="mobile-nav-header"><a>Партнер</a></li>
+    </nav>
+                </section>
+                <header class="header">
+                    <div class="header_logo">
+    <svg width="210" height="35" viewBox="0 0 210 35" class="logo">
         <use xlink:href="img/svg/logo.svg#logo"/>
     </svg>
 </div>
@@ -28,44 +59,66 @@
         </li>
     </ul>
 </nav>
-            </header>
-            <section class="banner">
-                <div class="col">
+
+
+                </header>
+                <section class="banner">
+                    <div class="col">
+    <div class="banner_header">
     <h1 class="banner_title">Тизерная реклама с <span class="banner_line">максимальной</span><br> конверсией</h1>
     <p class="banner_text">Teaser.Guru — это продвинутый сервис по созданию результативной тизерной рекламы на проверенных площадках.</p>
 </div>
+</div>
 <div class="col col_parallax" id="scene">
-    <div class="banner_laptop" data-depth = " 0.2 ">
-        <!--<iframe src="" frameborder="0"></iframe>-->
+    <div class="parallax_layer" data-depth = " 0.4 ">
+        <div class="banner_laptop">
+            <!--<video playsinline="" autoplay="" muted="" loop=""></video>-->
+        </div>
     </div>
-    <img class="banner_parallax" src="img/img-parallax-4.png" alt="parallax-1" data-depth = " 0.5 ">
-    <img class="banner_parallax" src="img/img-parallax-3.png" alt="parallax-2" data-depth = " 0.2 ">
-    <img class="banner_parallax" src="img/img-parallax-2.png" alt="parallax-3" data-depth = " 0.4 ">
+    <div class="parallax_layer" data-depth = " 0.5 ">
+        <img class="banner_parallax" src="img/img-parallax-4.png" alt="parallax-1">
+    </div>
+    <div class="parallax_layer" data-depth = " 0.2 ">
+        <img class="banner_parallax" src="img/img-parallax-3.png" alt="parallax-2">
+    </div>
+    <div class="parallax_layer" data-depth = " 0.4 ">
+        <img class="banner_parallax" src="img/img-parallax-2.png" alt="parallax-3">
+    </div>    
+</div>
+<div class="scroll-button">
+    <svg width='50' height='50' fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100"  xml:space="preserve">
+        <g id="arrow"><g><polygon points="28.7,41 33,36.8 50,54.5 67,36.8 71.3,41 50,63.2   "/></g></g>
+    </svg>
 </div>
 
-            </section>
-            <main class="content">
-                <div class="col content_col">
+                </section>
+            </div>
+            <div class="container_mobile scroll_block">
+                <main class="content">
+                    <div class="col content_col">
     <a href="#" class="content_btn content_btn__pink bt_tr">
         <div class="content_block">
             <h2 class="content_title">Я-партнер</h2>
             <p class="content_subtitle">Хочу повысить доход от сайта</p>
+            <button class="btn">Выбрать</button>
         </div>
     </a>
 </div>
 <div class="col content_col">
     <a href="#" class="content_btn content_btn__purple bt_tr">
         <div class="content_block">    
-        <h2 class="content_title">Я-рекламодатель</h2>
-        <p class="content_subtitle">Хочу расширить целевую аудиторию</p>
+            <h2 class="content_title">Я-рекламодатель</h2>
+            <p class="content_subtitle">Хочу расширить целевую аудиторию</p>
+            <button class="btn">Выбрать</button>
         </div>
     </a>
 </div>
-            </main>
-        </div>  
+                </main>
+            </div>  
+        </div>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/jquery.onepage-scroll.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>        

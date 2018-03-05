@@ -1,0 +1,98 @@
+@media (max-width: 480px) {
+    html {
+        font-size: 1vw;
+    }
+   .container{
+      height: 100%;
+      padding: 0;
+        &_top {
+            padding: 0 30px;
+        }
+        &_mobile {
+            height: 100vh;
+        
+        }
+    }
+    .btn {
+        display: block;
+    }
+    .burger-menu {
+        display: block;
+    }
+   .scroll-button {
+    display: block;
+    position: absolute;
+    bottom: -20%;
+    cursor: pointer;
+   }
+   .banner {
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin-top: 20%;
+       padding: 0 30px;
+       &_header {
+           text-align: center;
+           margin-bottom: 20%;
+       }
+       &_laptop {
+           width: 100%;
+       }
+       &_parallax {
+           width: 100%;
+       }
+   }
+   .header_nav {
+       display: none;
+   }
+   .logo {
+      width: 50%;
+      height: auto;
+   }
+   .col {
+       width: 100%;
+   }
+   .content {
+       margin-bottom: 0;
+       flex-direction: column;
+       height: 100%;
+       &_title {
+           margin-top: 0;
+           font-size: 20px;
+       }
+        &_subtitle {
+            opacity: 1;
+        }
+        &_block {
+            text-align: center;
+            margin-left: 0;
+            left: 50%;
+            top: 30%;
+            transform: translateX(-50%);
+        }
+        &_col {
+            height: 50%;
+            margin-right: 0;
+            &:hover {
+                transform: translateY(0);
+                & .content_title {
+                    transform: translateY(0);
+                }
+                & .content_subtitle {
+                    transform: translateY(0);
+                }
+            }
+        }
+        &_btn {
+            padding-bottom: 0;
+            height: 100%;
+            box-shadow: none;
+            &__purple {
+                background: url('../img/img-button-mobile-1.jpg') no-repeat center;
+            }
+            &__pink {
+                background: url('../img/img-button-mobile-2.jpg') no-repeat center;
+            }
+        }    
+    }
+}

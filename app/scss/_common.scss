@@ -2,7 +2,6 @@ html {
     font-size: 10px;
 }
 body {
-    height: 100vh;
     background: url('../img/img-text-guru.jpg') no-repeat ;
     background-position: 0% 100%;
     font-family: $font-text;
@@ -15,6 +14,7 @@ body {
     padding: 0 30px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .col {
     width: 50%;
@@ -25,6 +25,123 @@ body {
     width: 100%;
     height: auto;
 }
+.scroll-button, .btn {
+    display: none;
+}
+.mobile-nav {
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: opacity .4s ;
+    
+}
+.mobile-menu-title {
+    margin: 0;
+}
+.mobile-nav-header {
+    display: flex;
+    font-size: 14px;
+    background: $color-menu;
+    color: #ffffff;
+    font-family: $font-light;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    opacity: 0;
+    transition: .5s ease;
+    &:first-child {
+        background: #ffffff;
+        color: $color-black;
+    }
+}
+.btn {
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 22px;
+    padding: 12px 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1;
+    margin-top: 20px;
+}
+.burger-menu {
+    position: absolute;
+    height: 15px;
+    width: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+    right: 10%;
+    top: 6px;
+}
+
+.burger-top.active {
+            transform: rotate(45deg);
+            top: 5px;
+        }
+.burger-middle.active {
+            background: transparent;
+            transform: rotate(90deg);
+        }
+.burger-bottom.active {
+            transform: rotate(-45deg);
+            top: 5px;
+        }
+.mobile-nav.active {
+    opacity: 1;
+}
+.divider {
+    position: relative;
+    padding: 40px 0;
+}
+.divider:before, 
+.divider:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background: $color-blue;
+    
+}
+.divider:before {
+    top: 14px;
+}
+.divider:after {
+    bottom: 14px;
+}
+
+
+
+.burger-top,
+  .burger-middle,
+  .burger-bottom {
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    background: $color-blue;
+    transition: all .4s ;
+  }
+  
+  .burger-top {
+    top: 0;
+  }
+  
+  .burger-middle {
+    top: 6px;
+  }
+  
+  .burger-bottom {
+    bottom: 0;
+  }
+  
 
 
 
