@@ -11,8 +11,14 @@
     &_text {
         @include fontSize(18);
     }
+    &_video {
+        padding-bottom: 32%;
+        position: relative;
+        
+        
+    }
     &_laptop {
-        padding-bottom: 62%;
+        padding-bottom: 32%;
         margin-top: -10%;
         background: url('../img/img-parallax-1.png') no-repeat;
         background-position: 50% 0%;
@@ -45,4 +51,10 @@
        }
     }
   
+}
+.video {
+    width: 64%;
+    position: absolute;
+    top: 60%;
+    left: 16%;
 }
